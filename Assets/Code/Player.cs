@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public AudioClip shootSound;
 
     public GameObject bulletPrefab;
+    public GameObject upgradePrefab;
     Rigidbody2D _rigidbody2D;
     AudioSource _audioSource;
 
@@ -46,10 +47,12 @@ public class Player : MonoBehaviour
         if(other.CompareTag("Boots")) {
             speed = 20;
             Destroy(other.gameObject);
+            Instantiate(upgradePrefab, transform.position, Quaternion.identity);
         }
         if (other.CompareTag("Milk")) {
             isMilk = true;
             Destroy(other.gameObject);
+            Instantiate(upgradePrefab, transform.position, Quaternion.identity);
         }
     }
 }
