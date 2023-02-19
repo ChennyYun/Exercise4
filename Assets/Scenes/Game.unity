@@ -247,7 +247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18192378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.49, y: 0.03, z: 0}
+  m_LocalPosition: {x: -10.79, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 11.673438, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -486,7 +486,7 @@ Transform:
   m_GameObject: {fileID: 428188234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 10, z: 1}
+  m_LocalScale: {x: 25, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -773,7 +773,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ff674b65d8db84b54988eec37c7f5642, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 661c243b8033f430faceac92921ccb58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -810,14 +810,14 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 4.6}
+    oldSize: {x: 4.6, y: 4.6}
     newSize: {x: 3.2, y: 4.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -825,45 +825,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.26999998, y: -1.41}
-      - {x: 0.13, y: -1.5699999}
-      - {x: 0.17999999, y: -2.3}
-      - {x: 1.02, y: -2.3}
-      - {x: 1.04, y: -2}
-      - {x: 0.68, y: -1.8199999}
-      - {x: 0.64, y: -1.1999999}
-      - {x: 0.24, y: -0.79999995}
-      - {x: 0.19999999, y: -0.32}
-      - {x: 0.59, y: -0.55}
-      - {x: 1.11, y: -0.56}
-      - {x: 1.5999999, y: -0.21}
-      - {x: 1.5999999, y: 0.12}
-      - {x: 1, y: 0.12}
-      - {x: 0.01, y: 0.53999996}
-      - {x: 0.45, y: 1.49}
-      - {x: 0.41, y: 1.74}
-      - {x: 0.02, y: 1.7199999}
-      - {x: 0.02, y: 2.3}
-      - {x: -0.82, y: 2.3}
-      - {x: -1.25, y: 1.7099999}
-      - {x: -1.2099999, y: 1.4599999}
-      - {x: -0.82, y: 1.48}
-      - {x: -0.84, y: 0.69}
-      - {x: -1.2099999, y: 0.34}
-      - {x: -1.5999999, y: -0.08}
-      - {x: -1.5999999, y: -0.71999997}
-      - {x: -1.4, y: -0.91999996}
-      - {x: -1, y: -0.91999996}
-      - {x: -0.97999996, y: -0.9}
-      - {x: -0.96, y: -0.48999998}
-      - {x: -0.83, y: -0.14999999}
-      - {x: -1.02, y: -1.1}
-      - {x: -1.22, y: -1.5}
-      - {x: -1.22, y: -2.3}
-      - {x: -0.38, y: -2.3}
-      - {x: -0.38, y: -2.1}
-      - {x: -0.56, y: -1.88}
-      - {x: -0.22999999, y: -0.96}
+    - - {x: 0.88, y: -1.29}
+      - {x: 1.12, y: -0.32999998}
+      - {x: 1.5999999, y: -0.099999994}
+      - {x: 1.5999999, y: 0.17999999}
+      - {x: 0.77, y: 0.34}
+      - {x: 1.31, y: 0.85999995}
+      - {x: 1.5799999, y: 0.98999995}
+      - {x: 1.5999999, y: 1.01}
+      - {x: 1.5999999, y: 1.1899999}
+      - {x: 0.57, y: 1.75}
+      - {x: -0.51, y: 1.75}
+      - {x: -1.17, y: 1.35}
+      - {x: -1.17, y: 0.74}
+      - {x: -0.77, y: 0.38}
+      - {x: -1.09, y: 0.19999999}
+      - {x: -0.83, y: -0.91999996}
+      - {x: -0.45, y: -0.74}
+      - {x: -0.45, y: -2.3}
+      - {x: 0.59, y: -2.3}
 --- !u!50 &894071343
 Rigidbody2D:
   serializedVersion: 4
