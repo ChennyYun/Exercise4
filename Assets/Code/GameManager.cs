@@ -50,7 +50,8 @@ public class GameManager : MonoBehaviour
         time -= Time.deltaTime;
         if (time <= 0)
         {
-            SceneManager.LoadScene("Over");
+            SceneManager.LoadScene("KerwinTest");
+            time = 60;
         }
     }
 }

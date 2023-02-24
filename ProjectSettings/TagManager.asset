@@ -10,6 +10,7 @@ TagManager:
   - Kill
   - Boots
   - Milk
+  - Laser
   layers:
   - Default
   - TransparentFX
