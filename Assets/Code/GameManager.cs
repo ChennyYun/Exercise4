@@ -56,12 +56,13 @@ public class GameManager : MonoBehaviour
             time = 60;
         }
     }
+    
     void nextLevel(){
         if (level == 0){
             SceneManager.LoadScene("Level 1");
         }
-        if (level == 1) {
-            SceneManager.LoadScene("KerwinTest");
+        else if (level == 1) {
+            SceneManager.LoadScene("Level 2");
         }
         else {
             SceneManager.LoadScene("Over");

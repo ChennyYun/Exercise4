@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5762700061593732993}
   m_Layer: 0
   m_Name: Bull
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   explosion: {fileID: 6698578484388224903, guid: 33f79a4c55d7b4478b6bdd328af8b676, type: 3}
   boots: {fileID: 1426886785730625192, guid: 8d4c309fccd114c2db05295f79f73a8b, type: 3}
   milk: {fileID: 4326288310738602120, guid: 8437ee02ce0b94a95999c3437d1b5ae6, type: 3}
-  sceneName: 
+  sceneName: Over
 --- !u!50 &6734798796963026142
 Rigidbody2D:
   serializedVersion: 4
