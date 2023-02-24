@@ -60,8 +60,11 @@ public class GameManager : MonoBehaviour
         if (level == 0){
             SceneManager.LoadScene("Level 1");
         }
-        else {
+        if (level == 1) {
             SceneManager.LoadScene("KerwinTest");
+        }
+        else {
+            SceneManager.LoadScene("Over");
         }
     }
 }
