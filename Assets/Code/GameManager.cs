@@ -14,14 +14,14 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI levelUI;
     private void Awake()
     {
-        if (FindObjectsOfType<GameManager>().Length > 1)
-        {
-            // Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
+        // if (FindObjectsOfType<GameManager>().Length > 1)
+        // {
+        //     // Destroy(gameObject);
+        // }
+        // else
+        // {
+        //     DontDestroyOnLoad(gameObject);
+        // }
     }
 
     // Start is called before the first frame update
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
             time = 60;
         }
     }
-    
+
     void nextLevel(){
         if (level == 0){
             SceneManager.LoadScene("Level 1");
