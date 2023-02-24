@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Welcome.unity
     guid: 74642d9dead774217a8b6b4afef11117
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Level 0.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Over.unity
     guid: 3d011f060de2949f1976c810581cc13f
   - enabled: 1
-    path: Assets/Scenes/KerwinTest.unity
+    path: Assets/Scenes/Level 2.unity
     guid: 1c029f47604e46f44abcb9e9e2830576
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
