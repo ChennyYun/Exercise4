@@ -7,10 +7,11 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     private int score = 0;
+    public int level = 0;
     public float time = 60f;
     public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI timeUI;
-
+    public TextMeshProUGUI levelUI;
     private void Awake()
     {
         if (FindObjectsOfType<GameManager>().Length > 1)
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
     {
         scoreUI.text = "Score: " + score;
         timeUI.text = "Ends In: " + time + "s";
+        levelUI.text = "Level " + level;
     }
 
     public void AddScore(int points)
@@ -50,8 +52,16 @@ public class GameManager : MonoBehaviour
         time -= Time.deltaTime;
         if (time <= 0)
         {
-            SceneManager.LoadScene("KerwinTest");
+            nextLevel();
             time = 60;
+        }
+    }
+    void nextLevel(){
+        if (level == 0){
+            SceneManager.LoadScene("Level 1");
+        }
+        else {
+            SceneManager.LoadScene("KerwinTest");
         }
     }
 }
