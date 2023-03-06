@@ -9,9 +9,11 @@ public class GameManager : MonoBehaviour
     private int score = 0;
     public int level = 0;
     public float time = 60f;
+    public int life = 3;
     public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI timeUI;
     public TextMeshProUGUI levelUI;
+    public TextMeshProUGUI lifeUI;
     private void Awake()
     {
         // if (FindObjectsOfType<GameManager>().Length > 1)
@@ -30,12 +32,19 @@ public class GameManager : MonoBehaviour
         scoreUI.text = "Score: " + score;
         timeUI.text = "Ends In: " + time + "s";
         levelUI.text = "Level " + level;
+        lifeUI.text = "Life: " + life;
     }
 
     public void AddScore(int points)
     {
         score += points;
         scoreUI.text = "Score: " + score;
+    }
+
+    public void AddLife()
+    {
+        life += 1;
+        lifeUI.text = "Life: " + life;
     }
 
     // Update is called once per frame
@@ -63,6 +72,9 @@ public class GameManager : MonoBehaviour
         }
         else if (level == 1) {
             SceneManager.LoadScene("Level 2");
+        }
+        else if (level == 2) {
+            SceneManager.LoadScene("Level3");
         }
         else {
             SceneManager.LoadScene("Over");
