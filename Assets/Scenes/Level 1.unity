@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0e05cfa6d1a4ea5b22f0453214e40f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 60
+  time: 30
   enemyPrefabs:
   - {fileID: 760753844784255046, guid: 01214cbb0d6d57d459ad1f0d4891d417, type: 3}
   - {fileID: 6928739149537087468, guid: 664a3a1bfc2c04cdfa2e6dca5ede1c97, type: 3}
@@ -875,10 +875,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
-  time: 60
+  time: 30
+  life: 3
   scoreUI: {fileID: 1465252950}
   timeUI: {fileID: 1717938802}
   levelUI: {fileID: 1444498927}
+  lifeUI: {fileID: 0}
 --- !u!4 &1014320094
 Transform:
   m_ObjectHideFlags: 0

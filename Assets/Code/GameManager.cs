@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     private int score = 0;
     public int level = 0;
-    public float time = 60f;
+    public float time = 30f;
     public int life = 3;
     public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI timeUI;
@@ -41,9 +41,9 @@ public class GameManager : MonoBehaviour
         scoreUI.text = "Score: " + score;
     }
 
-    public void AddLife()
+    public void ChangeLife(int i)
     {
-        life += 1;
+        life += i;
         lifeUI.text = "Life: " + life;
     }
 
@@ -62,8 +62,9 @@ public class GameManager : MonoBehaviour
         if (time <= 0)
         {
             nextLevel();
-            time = 60;
+            time = 30;
         }
+        
     }
 
     void nextLevel(){
@@ -74,7 +75,9 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("Level 2");
         }
         else if (level == 2) {
+            //print("hi");
             SceneManager.LoadScene("Level3");
+            
         }
         else {
             SceneManager.LoadScene("Over");

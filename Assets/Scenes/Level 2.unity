@@ -400,7 +400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ends In: 60s'
+  m_text: 'Ends In: 30s'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -507,10 +507,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 2
-  time: 60
+  time: 1
+  life: 3
   scoreUI: {fileID: 1299736972}
   timeUI: {fileID: 825550269}
   levelUI: {fileID: 160278231}
+  lifeUI: {fileID: 0}
 --- !u!4 &826530372
 Transform:
   m_ObjectHideFlags: 0
@@ -555,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0e05cfa6d1a4ea5b22f0453214e40f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 60
+  time: 30
   enemyPrefabs:
   - {fileID: 760753844784255046, guid: 01214cbb0d6d57d459ad1f0d4891d417, type: 3}
   - {fileID: 6928739149537087468, guid: 664a3a1bfc2c04cdfa2e6dca5ede1c97, type: 3}

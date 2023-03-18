@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4437094319911418273, guid: d3e6e3c05122347e59dad62d81d08570, type: 3}
+      propertyPath: m_Color.b
+      value: 0.028657902
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437094319911418273, guid: d3e6e3c05122347e59dad62d81d08570, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437094319911418273, guid: d3e6e3c05122347e59dad62d81d08570, type: 3}
+      propertyPath: m_Color.r
+      value: 0.10603542
+      objectReference: {fileID: 0}
     - target: {fileID: 4437094319911418274, guid: d3e6e3c05122347e59dad62d81d08570, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -821,7 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0e05cfa6d1a4ea5b22f0453214e40f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 60
+  time: 30
   enemyPrefabs:
   - {fileID: 760753844784255046, guid: 01214cbb0d6d57d459ad1f0d4891d417, type: 3}
   - {fileID: 6928739149537087468, guid: 664a3a1bfc2c04cdfa2e6dca5ede1c97, type: 3}
@@ -1005,7 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4895e0148cddb432b8f46fa291f665e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
+  level: -1
   time: 60
   life: 3
   scoreUI: {fileID: 730891581}

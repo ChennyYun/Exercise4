@@ -43,6 +43,23 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
 
+        // if(other.CompareTag("Player") && _gameManager.level < 0) {
+        //     _gameManager.ChangeLife(-1);
+        //add partical system
+        //use a function in the Player ot change color
+        //     if(_gameManager.life == -1)
+        //     {
+        //         Destroy(other.gameObject);
+        //         Destroy(gameObject);
+        //         SceneManager.LoadScene(sceneName);
+        //     }
+        // }
+
+        // if(other.CompareTag("Player") && _gameManager.level != 3) {
+        //     Destroy(other.gameObject);
+        //     Destroy(gameObject);
+        //     SceneManager.LoadScene(sceneName);
+        // }
         if(other.CompareTag("Player")) {
             Destroy(other.gameObject);
             Destroy(gameObject);
