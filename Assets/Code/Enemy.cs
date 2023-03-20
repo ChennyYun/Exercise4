@@ -61,9 +61,14 @@ public class Enemy : MonoBehaviour
         //     SceneManager.LoadScene(sceneName);
         // }
         if(other.CompareTag("Player")) {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            _gameManager.ChangeLife(-1);
+            if(_gameManager.life<0){
+                Destroy(other.gameObject);
+                SceneManager.LoadScene(sceneName);
+            }
             Destroy(gameObject);
-            SceneManager.LoadScene(sceneName);
+            
         }
     }
 }
