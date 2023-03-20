@@ -12,7 +12,7 @@ public class GameOver : MonoBehaviour
         _gameManager = FindObjectOfType<GameManager>();
         scoreUI.text = "Your Total Score is " + _gameManager.score;
         _gameManager.score = 0;
-        _gameManager.life = 3;
+        _gameManager.life = 1;
     }
 
 }

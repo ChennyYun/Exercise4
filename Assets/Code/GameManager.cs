@@ -9,11 +9,12 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     // public int level = 0;
     // public float time = 10f;
-    public int life = 3;
+    public int life = 1;
     //public TextMeshProUGUI scoreUI;
     // public TextMeshProUGUI timeUI;
     // public TextMeshProUGUI levelUI;
     // public TextMeshProUGUI lifeUI;
+    
     private void Awake()
     {
         if (FindObjectsOfType<GameManager>().Length > 1)
