@@ -6,45 +6,45 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    private int score = 0;
-    public int level = 0;
-    public float time = 30f;
+    public int score = 0;
+    // public int level = 0;
+    // public float time = 10f;
     public int life = 3;
-    public TextMeshProUGUI scoreUI;
-    public TextMeshProUGUI timeUI;
-    public TextMeshProUGUI levelUI;
-    public TextMeshProUGUI lifeUI;
+    //public TextMeshProUGUI scoreUI;
+    // public TextMeshProUGUI timeUI;
+    // public TextMeshProUGUI levelUI;
+    // public TextMeshProUGUI lifeUI;
     private void Awake()
     {
-        // if (FindObjectsOfType<GameManager>().Length > 1)
-        // {
-        //     // Destroy(gameObject);
-        // }
-        // else
-        // {
-        //     DontDestroyOnLoad(gameObject);
-        // }
+        if (FindObjectsOfType<GameManager>().Length > 1)
+        {
+            // Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreUI.text = "Score: " + score;
-        timeUI.text = "Ends In: " + time + "s";
-        levelUI.text = "Level " + level;
-        lifeUI.text = "Life: " + life;
+        // scoreUI.text = "Score: " + score;
+        // timeUI.text = "Ends In: " + time + "s";
+        // levelUI.text = "Level " + level;
+        // lifeUI.text = "Life: " + life;
     }
 
     public void AddScore(int points)
     {
         score += points;
-        scoreUI.text = "Score: " + score;
+        //scoreUI.text = "Score: " + score;
     }
 
     public void ChangeLife(int i)
     {
         life += i;
-        lifeUI.text = "Life: " + life;
+        //lifeUI.text = "Life: " + life;
     }
 
     // Update is called once per frame
@@ -56,31 +56,31 @@ public class GameManager : MonoBehaviour
             Application.Quit();
         }
 #endif
-        int timeInt = (int)time;
-        timeUI.text = "Ends In: " + timeInt + "s";
-        time -= Time.deltaTime;
-        if (time <= 0)
-        {
-            nextLevel();
-            time = 30;
-        }
+        // int timeInt = (int)time;
+        // timeUI.text = "Ends In: " + timeInt + "s";
+        // time -= Time.deltaTime;
+        // if (time <= 0)
+        // {
+        //     nextLevel();
+        //     time = 30;
+        // }
         
     }
 
-    void nextLevel(){
-        if (level == 0){
-            SceneManager.LoadScene("Level 1");
-        }
-        else if (level == 1) {
-            SceneManager.LoadScene("Level 2");
-        }
-        else if (level == 2) {
-            //print("hi");
-            SceneManager.LoadScene("Level3");
+    // void nextLevel(){
+    //     if (level == 0){
+    //         SceneManager.LoadScene("Level 1");
+    //     }
+    //     else if (level == 1) {
+    //         SceneManager.LoadScene("Level 2");
+    //     }
+    //     else if (level == 2) {
+    //         //print("hi");
+    //         SceneManager.LoadScene("Level3");
             
-        }
-        else {
-            SceneManager.LoadScene("Over");
-        }
-    }
+    //     }
+    //     else {
+    //         SceneManager.LoadScene("Over");
+    //     }
+    // }
 }

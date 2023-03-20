@@ -1004,7 +1004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &843687401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1017,13 +1017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4895e0148cddb432b8f46fa291f665e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: -1
-  time: 60
+  score: 0
   life: 3
-  scoreUI: {fileID: 730891581}
-  timeUI: {fileID: 243790669}
-  levelUI: {fileID: 1855275180}
-  lifeUI: {fileID: 829848944}
 --- !u!4 &843687402
 Transform:
   m_ObjectHideFlags: 0
@@ -1051,6 +1046,7 @@ GameObject:
   - component: {fileID: 1152113388}
   - component: {fileID: 1152113387}
   - component: {fileID: 1152113386}
+  - component: {fileID: 1152113390}
   m_Layer: 5
   m_Name: Canvas(1)
   m_TagString: Untagged
@@ -1143,6 +1139,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1152113390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152113385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a424601facd943719d8ccb86a4ae2b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreUI: {fileID: 730891581}
+  level: 3
+  levelUI: {fileID: 1855275180}
+  lifeUI: {fileID: 829848944}
+  time: 10
+  timeUI: {fileID: 243790669}
 --- !u!1001 &1655264386
 PrefabInstance:
   m_ObjectHideFlags: 0
