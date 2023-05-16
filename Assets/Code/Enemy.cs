@@ -27,12 +27,12 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Bullet")) {
             _gameManager.AddScore(pointValue);
-            // change score to life
-            if(_gameManager.score>=50){
-                _gameManager.ChangeLife(1);
-                _gameManager.score -= 50;
-            }
-            //
+            // // change score to life
+            // if(_gameManager.score>=50){
+            //     _gameManager.ChangeLife(1);
+            //     _gameManager.score -= 50;
+            // }
+            // //
             Instantiate(explosion, transform.position, Quaternion.identity);
             int randomVal = Random.Range(0, 10);
             if(randomVal == 0) {

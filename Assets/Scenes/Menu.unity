@@ -1074,7 +1074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -283, y: -33}
+  m_AnchoredPosition: {x: -283, y: 178}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1653754922
@@ -1097,8 +1097,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Total:\n  4 levels\n \nstart:\n  score: 0\n  life:  1\n\nshoot the cows
-    to earn scores & life\n\n1 life = 50 scores = 5 cows\n\nHit by a cow -1 life\n\n\n      "
+  m_text: "levels: 4     start life: 1\n\n\n\n\n\n\n\n\n\n\n\n\nshoot the cows to
+    earn scores & life\n\n1 life = 50 scores = 5 cows\n\npress \"c\" to change 50
+    scores to 1 life\n\nHit by a cow -1 life\n\nThe cows move faster once you get
+    a boot.\nyou can shoot 3 bullets once you get a milk.\n      "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

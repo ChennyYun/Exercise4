@@ -15,12 +15,21 @@ public class Player : MonoBehaviour
     AudioSource _audioSource;
 
     bool isMilk = false;
+    GameManager _gameManager;
+    // change the color of the player when hit by an enemy
+    SpriteRenderer m_SpriteRenderer;
+     Color m_NewColor;
+    //
 
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
+        _gameManager = FindObjectOfType<GameManager>();
+        
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -41,6 +50,16 @@ public class Player : MonoBehaviour
                 newBullet3.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletSpeed, 0));
             }
         }
+        //
+        if(Input.GetKeyDown(KeyCode.C)){
+            // change score to life
+            if(_gameManager.score>=50){
+                _gameManager.ChangeLife(1);
+                _gameManager.score -= 50;
+            }
+            //
+        }
+        //
     }
 
        private void OnTriggerEnter2D(Collider2D other) {
@@ -54,5 +73,10 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             Instantiate(upgradePrefab, transform.position, Quaternion.identity);
         }
+        if (other.CompareTag("Enemy")) {
+            m_NewColor = new Color(255, 0, 0);
+            m_SpriteRenderer.color = m_NewColor;
+        }
+        m_SpriteRenderer.color = new Color(255, 255, 255);
     }
 }

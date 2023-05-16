@@ -11,7 +11,7 @@ public class CanvasSys : MonoBehaviour
     public TextMeshProUGUI levelUI;
     //get life from GameManager
     public TextMeshProUGUI lifeUI;
-    public float time = 20f;
+    public float time = 30f;
     public TextMeshProUGUI timeUI;
     GameManager _gameManager;
     //private int scoreTolife;
