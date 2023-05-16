@@ -70,13 +70,24 @@ public class Player : MonoBehaviour
         }
         if (other.CompareTag("Milk")) {
             isMilk = true;
+            StartCoroutine(setAttackWithDelay(3f));
             Destroy(other.gameObject);
             Instantiate(upgradePrefab, transform.position, Quaternion.identity);
         }
         if (other.CompareTag("Enemy")) {
             m_NewColor = new Color(255, 0, 0);
             m_SpriteRenderer.color = m_NewColor;
+            StartCoroutine(setColorWithDelay(1f));
         }
+        //m_SpriteRenderer.color = new Color(255, 255, 255);
+    }
+    IEnumerator setColorWithDelay(float delay) {
+        yield return new WaitForSeconds(delay);
         m_SpriteRenderer.color = new Color(255, 255, 255);
     }
+    IEnumerator setAttackWithDelay(float delay) {
+        yield return new WaitForSeconds(delay);
+        isMilk = false;
+    }
+
 }

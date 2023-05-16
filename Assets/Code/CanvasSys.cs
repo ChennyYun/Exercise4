@@ -54,11 +54,12 @@ public class CanvasSys : MonoBehaviour
         else if (level == 1) {
             SceneManager.LoadScene("Level 2");
         }
-        else if (level == 2) {
-            //print("hi");
-            SceneManager.LoadScene("Level3");
+        // else if (level == 2) {
+        //     //print("hi");
+        //     SceneManager.LoadScene("Level3");
             
-        }else if (level == 3) {
+        // }
+        else if (level == 2) {
             SceneManager.LoadScene("Win");
         }
         else {
