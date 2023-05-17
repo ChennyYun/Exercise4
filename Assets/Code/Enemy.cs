@@ -12,6 +12,9 @@ public class Enemy : MonoBehaviour
     public GameObject boots;
     public GameObject milk;
     GameManager _gameManager;
+    public int hp=3;
+    public int currentHealth;
+    public HealthBar healthbar;
 
     public string sceneName;
 
@@ -22,11 +25,14 @@ public class Enemy : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.AddForce(new Vector2(-speed, 0));
         _gameManager = FindObjectOfType<GameManager>();
+        currentHealth = hp;
+        healthbar.SetMax(hp);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Bullet")) {
             _gameManager.AddScore(pointValue);
+            
             // // change score to life
             // if(_gameManager.score>=50){
             //     _gameManager.ChangeLife(1);
@@ -42,7 +48,12 @@ public class Enemy : MonoBehaviour
                 Instantiate(milk, transform.position, Quaternion.identity);
             }
             Destroy(other.gameObject);
-            Destroy(gameObject);
+            currentHealth -= 1;
+            healthbar.SetHealth(currentHealth);
+            if(currentHealth<=0){
+                Destroy(gameObject);
+            }
+            
         }
 
         if(other.CompareTag("Kill")) {

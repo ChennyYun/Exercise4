@@ -169,8 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 30
   enemyPrefabs:
-  - {fileID: 760753844784255046, guid: 01214cbb0d6d57d459ad1f0d4891d417, type: 3}
-  - {fileID: 6928739149537087468, guid: 664a3a1bfc2c04cdfa2e6dca5ede1c97, type: 3}
+  - {fileID: 2798368134876098018, guid: 99881c7631f0d49619786319e3a97700, type: 3}
+  - {fileID: 1952526479569306206, guid: df710dba6ada347bb968daeb18f4974f, type: 3}
   randIndex: 0
 --- !u!1 &18192378
 GameObject:
