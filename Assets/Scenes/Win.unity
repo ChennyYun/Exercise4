@@ -729,6 +729,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1183988156}
     m_Modifications:
+    - target: {fileID: 6931069730883454712, guid: 80abedbb3af5140a5a94ffac094c9fbe, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.69430536
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931069730883454712, guid: 80abedbb3af5140a5a94ffac094c9fbe, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.8773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931069730883454712, guid: 80abedbb3af5140a5a94ffac094c9fbe, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6000801
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931069731670770143, guid: 80abedbb3af5140a5a94ffac094c9fbe, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.71386904
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931069731670770143, guid: 80abedbb3af5140a5a94ffac094c9fbe, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931069731670770143, guid: 80abedbb3af5140a5a94ffac094c9fbe, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.5981666
+      objectReference: {fileID: 0}
     - target: {fileID: 6931069732011435660, guid: 80abedbb3af5140a5a94ffac094c9fbe, type: 3}
       propertyPath: m_Name
       value: Canvas
