@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject upgradePrefab;
     Rigidbody2D _rigidbody2D;
-    AudioSource _audioSource;
+    public AudioSource _audioSource;
 
     bool isMilk = false;
     GameManager _gameManager;
@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     SpriteRenderer m_SpriteRenderer;
      Color m_NewColor;
     //
+    public AudioClip damageSound;
+    public AudioSource audioS;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,7 @@ public class Player : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
         _gameManager = FindObjectOfType<GameManager>();
-        
+        audioS = GetComponent<AudioSource>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         
     }
@@ -77,6 +79,7 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Enemy")) {
             m_NewColor = new Color(255, 0, 0);
             m_SpriteRenderer.color = m_NewColor;
+            audioS.PlayOneShot(damageSound);
             StartCoroutine(setColorWithDelay(1f));
         }
         //m_SpriteRenderer.color = new Color(255, 255, 255);
