@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     int speed = 10;
@@ -83,6 +83,10 @@ public class Player : MonoBehaviour
             StartCoroutine(setColorWithDelay(1f));
         }
         //m_SpriteRenderer.color = new Color(255, 255, 255);
+        if (other.CompareTag("boss")) {
+            Destroy(other.gameObject);
+            SceneManager.LoadScene("Over");
+        }
     }
     IEnumerator setColorWithDelay(float delay) {
         yield return new WaitForSeconds(delay);

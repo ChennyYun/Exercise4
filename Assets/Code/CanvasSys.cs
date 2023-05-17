@@ -11,7 +11,7 @@ public class CanvasSys : MonoBehaviour
     public TextMeshProUGUI levelUI;
     //get life from GameManager
     public TextMeshProUGUI lifeUI;
-    public float time = 30f;
+    public float time = 10f;
     public TextMeshProUGUI timeUI;
     GameManager _gameManager;
     //private int scoreTolife;
@@ -35,7 +35,7 @@ public class CanvasSys : MonoBehaviour
         if (time <= 0)
         {
             nextLevel();
-            time = 30;
+            time = 10;
         }
         //change score to life
         // scoreTolife = _gameManager.score;
@@ -54,12 +54,12 @@ public class CanvasSys : MonoBehaviour
         else if (level == 1) {
             SceneManager.LoadScene("Level 2");
         }
-        // else if (level == 2) {
-        //     //print("hi");
-        //     SceneManager.LoadScene("Level3");
-            
-        // }
         else if (level == 2) {
+            //print("hi");
+            SceneManager.LoadScene("Level3");
+            
+        }
+        else if (level == 3) {
             SceneManager.LoadScene("Win");
         }
         else {

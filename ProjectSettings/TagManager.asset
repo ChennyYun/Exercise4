@@ -11,6 +11,7 @@ TagManager:
   - Boots
   - Milk
   - Laser
+  - boss
   layers:
   - Default
   - TransparentFX
