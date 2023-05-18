@@ -15,6 +15,7 @@ public class CanvasSys : MonoBehaviour
     public TextMeshProUGUI timeUI;
     GameManager _gameManager;
     //private int scoreTolife;
+    public int levelTransition=0;
     void Start()
     {
         _gameManager = FindObjectOfType<GameManager>();
@@ -32,7 +33,7 @@ public class CanvasSys : MonoBehaviour
         int timeInt = (int)time;
         timeUI.text = "Ends In: " + timeInt + "s";
         time -= Time.deltaTime;
-        if (time <= 0)
+        if (time <= 0 && levelTransition==0)
         {
             nextLevel();
             time = 10;
@@ -49,14 +50,14 @@ public class CanvasSys : MonoBehaviour
 
     void nextLevel(){
         if (level == 0){
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene("LevelTransition1");
         }
         else if (level == 1) {
-            SceneManager.LoadScene("Level 2");
+            SceneManager.LoadScene("LevelT2");
         }
         else if (level == 2) {
             //print("hi");
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("LevelT3");
             
         }
         else if (level == 3) {
